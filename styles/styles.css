@@ -183,7 +183,8 @@ a:focus {
     padding: 1.5rem;
     border-radius: 1rem;
     max-height: fit-content;
-    max-width: fit-content;
+    max-width: fit-content;    
+    /* secondbranch */
 }
 @media(min-width: 40em){
     .text-on-video h1{
