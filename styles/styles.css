@@ -36,7 +36,6 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: underline;
-    /* background-color: #aa9b88; */
 }
 
 a:focus {
@@ -88,7 +87,6 @@ a:focus {
     padding: 1rem;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.5rem;
-    text-decoration: none;
     color: #000000;
 }
 
@@ -204,18 +202,15 @@ a:focus {
     border: .5rem solid;
 }
 .LearnMore{
-    display: block;
+    display: block; 
+    width: fit-content; 
+    margin: 1rem auto; 
     margin-top: 1rem;
     font-size: 1.3rem;
     font-weight: bold;
+    text-align: center;
 }
 @media(min-width: 50em){
-    /* .text-on-video h1{
-        font-size: 2rem;
-    }
-    .text-on-video p{
-        font-size: 1.3rem;
-    } */
     .content-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 50%);
@@ -225,6 +220,7 @@ a:focus {
     }
     .info-section {
         display: flex;
+        justify-content: center; 
         flex-wrap: wrap;
         height: 100%;
         max-width: 100%;
@@ -257,6 +253,7 @@ a:focus {
     .info-section p{
         width: 50%;
         align-self: center;
+        text-align: justify;
     }
     .info-section img {
         max-width: 300px;

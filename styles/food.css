@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+/* Elements
+  --------------------------------------------- */
+/* Links
+  --------------------------------------------- */
+a,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px dotted;
+}
+
+/*--------------------------------------------------------------
+  # Components
+  --------------------------------------------------------------*/
+/* Header
+  --------------------------------------------- */
+.site-header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Site-logo {
+    width: 4.5rem;
+    height: 5rem;
+    margin-top: .5rem;
+}
+
+.site-navigation ul {  /* took the hamburger menu code from class lecture */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.site-navigation.toggled ul {
+    display: block;
+}
+
+.site-navigation a {
+    display: block;
+    padding: 1rem;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    padding: 1rem;
+}
+
+.menu-toggle:focus {
+    border: 0;
+    outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-navigation {
+        flex: 1 1 auto;
+        padding: 0 1rem;
+    }
+
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 0;
+    }
+
+    .site-navigation a {
+        line-height: 4.5rem;
+        padding: 0 1rem;
+    }
+}
+.banner {
+    width: 100%;
+    position: relative;
+    margin-top: 88px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.banner-text {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    border-radius: 8px;
+}
+h1{
+    margin: 0;
+    font-size: 3.5vh
+}
+@media (min-width: 50em) {
+    .banner {
+        height: calc(100vh - 88px); 
+    }
+
+    .banner img {
+        height: 100%;
+    }
+    h1{
+        font-size: 5vh;
+    }
+}
+.restaurants-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 3.1vh;
+}
+.restaurant{
+    width: 100%;
+    padding: 1.5rem;
+}
+.restaurant h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.restaurant img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 2.5rem auto;
+}
+
+.restaurant p {
+    margin: 2.5rem auto;
+    text-align: justify;
+}
+.restaurant:nth-child(3),
+.restaurant:nth-child(5){
+    background-color: white;
+    color: #000000;
+}
+.food-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 1rem;
+    padding: 1rem; 
+}
+
+.grid-item {
+    width: 90%; 
+    max-width: 600px;
+    margin: 0 auto; 
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: .5rem;
+    border: 5px solid white;
+}
+
+.grid-item figcaption {
+    margin-top: 0.5rem; /* Space between image and caption */
+    font-size: 0.95rem; /* Slightly smaller font size for mobile */
+    color: white; /* Ensures text is readable */
+}
+
+h2 {
+    font-size: 3vh; /* Reduces font size for mobile */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+@media(min-width:50rem){
+    h2{
+        font-size: 4vh;
+    }
+    .restaurant {
+        box-sizing: border-box;
+        padding: 4rem 2rem;
+        flex: 0 1 50%
+    }
+    .restaurant img {
+        width: 80%;
+        max-width: 100%;
+        margin: 3rem auto 2rem;
+        height: 400px;
+        object-fit: cover;
+    }
+    .restaurant p {
+        margin: auto ;
+        font-size: 2vh;
+    }
+    .restaurant:nth-child(3),
+    .restaurant:nth-child(4){
+        background-color: white;
+        color: black;
+    }
+    .restaurant:nth-child(5){
+        background-color: black;
+        color: white;
+    }
+    .food-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 2rem;
+        justify-content: center;
+        place-items: center;
+    }
+    
+    .food-grid h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    .grid-item img{
+        height: 200px; /* Fixed height for uniformity */
+        object-fit: cover;
+    }
+    
+    .grid-item figcaption {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+}
