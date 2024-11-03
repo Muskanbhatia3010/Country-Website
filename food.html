@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/food.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="Site-logo">
+            <img src="images/favicon.svg" alt="Singapore logo">
+        </a>
+        <nav class="site-navigation" id="site-navigation">
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <title>Menu Icon</title>
+                    <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                </svg>
+            </button>
+
+            <ul class="nav-menu" id="header-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Explore</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="credits.html">Credit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-text">
+                <h1>A Culinary Journey Through Singapore</h1>
+            </div>
+            <img src="images/Food-banner.jpg" alt="Singapore-Cusines">
+        </section>
+        <section class="restaurants-wrapper">
+            <h2>Singapore's Iconic Eats</h2>
+            <article class="restaurant">
+                <h3>Lau Pat Sat</h3>
+                <img src="images/Lau-Pa-Sat-Optimized.jpeg" alt="">
+                <p>Lau Pa Sat — where history, heritage architecture, and delectable local food blends seamlessly in a must-visit food and retail destination for both locals and visitors. As one of Singapore’s largest hawker centers spanning over 52,000 square feet and housing more than 80 hawkers and tenants, visitors are invited to revel in the elegant old-world charm of Singapore’s 'Best Looking' Food Hall.</p>
+            </article>
+            <article class="restaurant">
+                <h3>Tiong Bahru Bakery</h3>
+                <img src="images/Bakery-Optimized.jpeg" alt="">
+                <p>Tiong Bahru Bakery offers artisanal pastries and freshly baked goods crafted with premium ingredients, blending French baking traditions with a modern twist. Renowned for its buttery croissants and vibrant café atmosphere, it’s a must-visit for any food lover.</p>
+            </article>
+            <article class="restaurant">
+                <h3>Hill Street Tai Hwa Pork Noodle</h3>
+                <img src="images/Hill-Street (1).jpg" alt="">
+                <p>Hill Street Tai Hwa Pork Noodle is a Michelin-starred hawker stall in Singapore, famous for its perfectly cooked noodles topped with tender pork slices, liver, and a rich, tangy vinegar-based sauce. This iconic spot offers an authentic taste of Singapore's culinary heritage, attracting both locals and tourists alike.</p>
+            </article>
+            <article class="restaurant">
+                <h3>Maxwell Food Centre</h3>
+                <img src="images/MaxwellCentre-optimized.jpeg" alt="">
+                <!-- The most I could have optimized the image without compromising quality -->
+                <p>Maxwell Food Centre is home to some of Singapore’s best hawker stalls. It’s lauded by both locals and tourists as THE hawker centre to go to if you want to savour true blue Singaporean food. </p>
+            </article>
+
+
+
+        </section>
+        <section class="food-grid">
+            <h2>Must Try Foods</h2>
+            <figure class="grid-item">
+                <img src="images/Satay.jpeg" alt="Satay">
+                <figcaption>Satay</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/Laksa.jpeg" alt="Laksa">
+                <figcaption>Laksa</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/IceKachang.jpeg" alt="Ice Kachang">
+                <figcaption>Ice Kachang</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/chillicrab.jpeg" alt="Chilli Crab">
+                <figcaption>Chilli Crab</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/chickenrice.jpeg" alt="Chicken Rice">
+                <figcaption>Chicken Rice</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/bakchorme.jpeg" alt="Bak Chor Mee">
+                <figcaption>Bak Chor Mee</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/Pandanchiffoncake.jpeg" alt="Pandan Chiffon Cake">
+                <figcaption>Pandan Chiffon Cake</figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="images/roti prata.jpeg" alt="Roti Prata">
+                <figcaption>Roti Prata</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+
+    </footer>

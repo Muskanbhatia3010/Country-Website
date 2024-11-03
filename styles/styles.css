@@ -36,7 +36,6 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: underline;
-    /* background-color: #aa9b88; */
 }
 
 a:focus {
@@ -88,7 +87,6 @@ a:focus {
     padding: 1rem;
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 1.5rem;
-    text-decoration: none;
     color: #000000;
 }
 
@@ -130,10 +128,10 @@ a:focus {
 .video-background {
     position: fixed;
     width: 100%;
-    height: calc(100vh - 96px);
+    height: calc(100vh - 88px);
     z-index: 0;
     overflow: hidden;
-    top: 96px;
+    top: 88px;
 }
 .video-background::before {
     content: "";
@@ -162,6 +160,10 @@ a:focus {
 }
 .text-on-video h1{
     margin-bottom: 0.7rem;
+    font-size: 5vh;
+}
+.text-on-video p{
+    font-size: 2.5vh;
 }
 /* Content Wrapper for the Sections */
 .content-wrapper {
@@ -180,31 +182,69 @@ a:focus {
 /* Info Section Style */
 .info-section {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 1rem;
-    max-height: fit-content;
-    max-width: fit-content;    
-    /* secondbranch */
+    height: fit-content;
+    align-self: center;
+    max-width: 400px;
 }
-@media(min-width: 40em){
-    .text-on-video h1{
-        font-size: 2rem;
-    }
-    .text-on-video p{
-        font-size: 1.3rem;
-    }
+.info-section a{
+    color: white;
+    text-decoration: underline;
+}
+.info-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 1rem auto;
+    border: .5rem solid;
+}
+.LearnMore{
+    display: block; 
+    width: fit-content; 
+    margin: 1rem auto; 
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+@media(min-width: 50em){
     .content-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: 1fr;
         gap: 1rem;
-        justify-content: center;
+        justify-items: center;
     }
     .info-section {
-        text-align: left; 
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        height: 100%;
+        max-width: 100%;
+    }   
+}
+@media(min-width: 90em){
+    /* .text-on-video h1{
+        font-size: 3rem;
+    }
+    .text-on-video p{
+        font-size: 1.6rem;
+    } */
+    .content-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .info-section {
         display: flex;
         flex-wrap: wrap;
-        max-height: fit-content;
+        height: 100%;
+        max-width: 100%;
     }
     h2{
         width: 100%;
@@ -213,14 +253,14 @@ a:focus {
     .info-section p{
         width: 50%;
         align-self: center;
+        text-align: justify;
     }
-}
-.info-section img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 0.5rem auto;
-    border: .5rem solid;
+    .info-section img {
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin: 1rem auto;
+        border: .5rem solid;
+    }
 }
