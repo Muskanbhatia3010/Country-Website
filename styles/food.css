@@ -87,7 +87,11 @@ a:focus {
     font-size: 1.5rem;
     color: #000000;
 }
-
+.nav-menu li a:hover,
+.nav-menu li a:focus{
+    background-color: #000000;
+    color: #ffffff;
+}
 .menu-toggle {
     display: block;
     background-color: transparent;
@@ -147,7 +151,10 @@ a:focus {
 }
 h1{
     margin: 0;
-    font-size: 3.5vh
+    font-size: 3.5vh;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800; 
 }
 @media (min-width: 50em) {
     .banner {
@@ -165,10 +172,18 @@ h1{
     display: flex;
     flex-wrap: wrap;
 }
-h2{
+.h2-heading{
+    background-color: #1f1f1f;
     width: 100%;
+}
+h2{
     text-align: center;
-    font-size: 3.1vh;
+    font-size: 3vh;  
+    width: 100%;
+}
+#food-heading h2{
+    margin: 0;
+    padding: 2rem;
 }
 .restaurant{
     width: 100%;
@@ -195,17 +210,19 @@ h2{
     background-color: white;
     color: #000000;
 }
+
 .food-grid {
     display: flex;
     flex-wrap: wrap;
     align-items: center; 
-    gap: 1rem;
     padding: 1rem; 
+    gap: 1rem;
+    background-color: #1f1f1f;
+    justify-content: center;
 }
-
 .grid-item {
-    width: 90%; 
-    max-width: 600px;
+    width: 100%;
+    max-width: 550px;
     margin: 0 auto; 
     border-radius: 8px;
     text-align: center;
@@ -213,23 +230,18 @@ h2{
 }
 
 .grid-item img {
-    width: 100%;
+    width: auto;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    margin: .5rem;
+    padding: .5rem;
     border: 5px solid white;
 }
 
 .grid-item figcaption {
-    margin-top: 0.5rem; /* Space between image and caption */
-    font-size: 0.95rem; /* Slightly smaller font size for mobile */
-    color: white; /* Ensures text is readable */
-}
-
-h2 {
-    font-size: 3vh; /* Reduces font size for mobile */
-    margin-bottom: 1rem; /* Adds space below the heading */
+    margin: 0.5rem 0; 
+    font-size: 0.95rem; 
+    color: white; 
 }
 @media(min-width:50rem){
     h2{
@@ -267,14 +279,11 @@ h2 {
         justify-content: center;
         place-items: center;
     }
-    
-    .food-grid h2 {
-        grid-column: 1 / -1;
-        text-align: center;
+    .grid-item{
+        max-width: 100%;
     }
     .grid-item img{
-        height: 200px; /* Fixed height for uniformity */
-        object-fit: cover;
+        height: 200px;
     }
     
     .grid-item figcaption {
@@ -282,4 +291,48 @@ h2 {
         font-size: 1rem;
     }
 
+}
+#site-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 6;
+    gap:0;
+    padding: 0rem;
+    margin: 0;
+}
+#site-footer p{
+    color: black;
+    margin: .5rem;
+    padding: 0px 10px;
+}
+#contactMe p{
+    margin: 1rem 0;
+    text-align: center;
+}
+#site-footer li{
+    display: inline-block;
+}
+.Contact svg{
+    fill: black;
+}
+.Contact ul{
+    display: flex;
+    gap: .5rem;
+    margin: .5rem 1rem;
+    padding: 0px 20px 5px
+}
+@media(min-width: 30em){
+    #site-footer{
+        flex-direction: row;
+    }
+    .Contact ul{
+        margin: .5rem 1rem 1rem;
+    }
+    
 }
