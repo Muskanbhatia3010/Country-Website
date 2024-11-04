@@ -205,11 +205,12 @@ h2{
     margin: 2.5rem auto;
     text-align: justify;
 }
-.restaurant:nth-child(3),
+.restaurant:nth-child(3), 
 .restaurant:nth-child(5){
     background-color: white;
     color: #000000;
 }
+/* Learnt this styling from past student wesbite */
 
 .food-grid {
     display: flex;

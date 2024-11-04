@@ -175,14 +175,13 @@ a:focus {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Add spacing between sections */
+    gap: 2rem; 
     padding: 2rem;
     margin: 96px auto 0; 
     color: white;
     text-align: center;
 }
 
-/* Info Section Style */
 .info-section {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem;
