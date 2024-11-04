@@ -130,6 +130,14 @@ a:focus {
         padding: 0 1rem;
     }
 }
+h1{
+    position: relative;
+    top:100px;
+    text-align: center;
+    color: #007bff;
+    font-size: 6vh;
+    padding: 2rem;
+}
 table {
     width: 70%;
     margin: 100px auto;

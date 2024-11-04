@@ -196,12 +196,6 @@ h2{
 .image-item:focus + .detailed-description {
     display: block;
  }
-figure p{
-    margin: 12px 0;
-    padding: 0px 24px;
-    text-align: center;
-    font-size: 1rem;
-}
 figcaption {
     margin: 12px 0;
     font-size: 1.2rem;
@@ -280,6 +274,12 @@ figcaption {
         transform: rotate(0) scale(1.05);
         transition: ease 0.3s;
     }
+}
+.blockquote-style p{
+    text-align: center;
+    font-style: italic;
+    font-size: 2vh;
+    font-weight: bold;
 }
 h3{
     text-align: center;
